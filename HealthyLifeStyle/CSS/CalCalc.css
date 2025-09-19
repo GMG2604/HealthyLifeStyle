@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+footer{
+    background-color: #0d2a06;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+h1 {
+    text-align: left;
+    color: #f0f0f0;
+    background-color: #0d2a06;
+    padding: 10px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+nav {
+    background-color: #0d2a06;
+    text-align: center;
+}
+nav ul {
+    color: whitesmoke;
+    margin-left: 250px;
+}
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+nav a:hover {
+    color: #206f31;
+    cursor: pointer;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+h2, p, label {
+    color: whitesmoke;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h2{
+    font-weight: 400;
+}
+button {
+    background-color: #39ea0d;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+}
+button:hover {
+    background-color: #206f31;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.calculator {
+    background-color: #0d2a06;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 15px 50px;
+    cursor: pointer;
+    border: 20px solid #206f31;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+}
+input {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#gender, #activity {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#meal-suggestions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #0d2a06;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+}
+.meal-plan-box {
+    width: 40%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #0d2a06;
+    text-align: center;
+    cursor: pointer;
+    color: #0d2a06;
+}
+.meal-plan-box:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.meal-plan-box h4, h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.meal-plan-box p {
+    color: #0d2a06;
+    font-weight: 400;
+}

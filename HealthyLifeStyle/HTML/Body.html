@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HealthyLifeStyle</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../CSS/Body.css">
+    </head>
+    <body>
+        <header>
+            <h1>HealthyLifeStyle
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="CalCalc.html">Calorie Calculator</a></li>
+                        <li><a href="FoodNutrition.html">Food and Nutrition</a></li>
+                        <li><a href="Body.html">Body</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </header>
+        <main>
+            <div class="fitness-section">
+                <div class="body-box" onclick="openModal('lose-weight')">
+                    <div class="body-name">Losing Weight</div>
+                </div>
+                
+                <div class="body-box" onclick="openModal('gain-weight')">
+                    <div class="body-name">Gaining Weight</div>
+                </div>
+                
+                <div class="body-box" onclick="openModal('lose-build-muscle')">
+                    <div class="body-name">Losing Weight & Building Muscle</div>
+                </div>
+                
+                <div class="body-box" onclick="openModal('gain-build-muscle')">
+                    <div class="body-name">Gaining Weight & Building Muscle</div>
+                </div>
+            </div>
+    
+            <div id="body-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-info"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="../JavaScript/Body.js"></script>
+    </body>
+</html>

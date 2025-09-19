@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HealthyLifeStyle</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../CSS/FoodNutrition.css">
+        <link rel="stylesheet" href="../CSS/scroll-bar.css">
+    </head>
+    <body>
+        <header>
+            <h1>HealthyLifeStyle
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="CalCalc.html">Calorie Calculator</a></li>
+                        <li><a href="FoodNutrition.html">Food and Nutrition</a></li>
+                        <li><a href="Body.html">Body</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </header>
+        <main>
+            <div class="container">
+                <input type="text" id="search-bar" placeholder="Search for food..." oninput="searchFood()" class="search-bar">
+
+                <div id="food-list" class="food-list">
+                <div class="food-box" onclick="openModal('apple')">
+                    <div class="food-name">Apple</div>
+                    <div class="food-image">
+                        <img src="../Images/apple.jpg" alt="Apple">
+                    </div>
+                </div>
+        
+                <div class="food-box" onclick="openModal('banana')">
+                    <div class="food-name">Banana</div>
+                    <div class="food-image">
+                        <img src="../Images/banana.jpg" alt="Banana">
+                    </div>
+                </div>
+
+
+            <div class="food-box" onclick="openModal('chicken-breast')">
+                <div class="food-name">Chicken Breast</div>
+                <div class="food-image">
+                    <img src="../Images/chicken-breast.jpg" alt="Chicken Breast">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('chicken-thighs')">
+                <div class="food-name">Chicken Thighs</div>
+                <div class="food-image">
+                    <img src="../Images/chicken-thighs.jpg" alt="Chicken Thighs">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('white-rice')">
+                <div class="food-name">White Rice</div>
+                <div class="food-image">
+                    <img src="../Images/white-rice.jpg" alt="White Rice">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('potatoes')">
+                <div class="food-name">Potatoes</div>
+                <div class="food-image">
+                    <img src="../Images/potatoes.jpg" alt="Potatoes">
+                </div>
+            </div>
+        
+            <div class="food-box" onclick="openModal('salmon')">
+                <div class="food-name">Salmon</div>
+                <div class="food-image">
+                    <img src="../Images/salmon.jpg" alt="Salmon">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('spinach')">
+                <div class="food-name">Spinach</div>
+                <div class="food-image">
+                    <img src="../Images/spinach.jpg" alt="Spinach">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('egg')">
+                <div class="food-name">Egg</div>
+                <div class="food-image">
+                    <img src="../Images/egg.jpg" alt="Egg">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('avocado')">
+                <div class="food-name">Avocado</div>
+                <div class="food-image">
+                    <img src="../Images/avocado.jpg" alt="Avocado">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('strawberries')">
+                <div class="food-name">Strawberries</div>
+                <div class="food-image">
+                    <img src="../Images/strawberry.jpg" alt="Strawberries">
+                </div>
+            </div>
+
+            <div class="food-box" onclick="openModal('blueberries')">
+                <div class="food-name">Blueberries</div>
+                <div class="food-image">
+                    <img src="../Images/blueberries.jpg" alt="Blueberries">
+                </div>
+            </div>
+
+                <div id="food-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-info"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <script src="../JavaScript/FoodNutrition.js"></script>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

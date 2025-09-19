@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HealthyLifeStyle</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../CSS/CalCalc.css">
+        <link rel="stylesheet" href="../CSS/scroll-bar.css">
+    </head>
+    <body>
+        <header>
+            <h1>HealthyLifeStyle
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="CalCalc.html">Calorie Calculator</a></li>
+                        <li><a href="FoodNutrition.html">Food and Nutrition</a></li>
+                        <li><a href="Body.html">Body</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </header>
+        <main>
+            <div class="calculator">
+                <h2>Calorie Calculator</h2>
+                <form id="calorie-form">
+                    <label for="weight">Weight:</label>
+                    <input type="number" id="weight" required>
+                    <input type="radio" id="kg" name="weight-unit" value="kg" checked>
+                    <label for="kg">kg</label>
+                    <input type="radio" id="lbs" name="weight-unit" value="lbs">
+                    <label for="lbs">lbs</label>
+                
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>               
+        
+                    <label for="age">Age (years):</label>
+                    <input type="number" id="age" required>
+        
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+        
+                    <label for="activity">Activity Level:</label>
+                    <select id="activity">
+                        <option value="1.2">Sedentary (little to no exercise)</option>
+                        <option value="1.375">Lightly Active (light exercise/sports 1-3 days/week)</option>
+                        <option value="1.55">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                        <option value="1.725">Very Active (hard exercise/sports 6-7 days a week)</option>
+                        <option value="1.9">Super Active (very hard exercise or training twice a day)</option>
+                    </select>
+        
+                    <button type="submit">Calculate</button>
+                </form>
+        
+                <div id="results">
+                    <h2>Results:</h2>
+                    <p id="bmr">BMR: </p>
+                    <p id="tdee">TDEE: </p>
+                    <p id="calories">Calories for Weight Loss: </p>
+                    <p id="calories-gain">Calories for Weight Gain: </p>
+                </div>
+                <div id="meal-suggestions" style="display:none;">
+                    <h3>Suggested Meals for Your Caloric Goal:</h3>
+                    <div id="meal-plan" class="meal-plan-box">
+                    </div>
+                </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="../JavaScript/CalCalc.js"></script>
+    </body>
+</html>

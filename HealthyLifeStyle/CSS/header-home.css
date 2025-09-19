@@ -1,0 +1,28 @@
+h2::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #0d2a06, #206f31, #39ea0d);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+h2:hover::after {
+    width: 100%;
+    transition: 1s;
+}
+h4::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #0d2a06, #206f31, #39ea0d);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+h4:hover::after {
+    width: 100%;
+    transition: 1s;
+}
